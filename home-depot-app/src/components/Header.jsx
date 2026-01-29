@@ -12,12 +12,13 @@ function Header() {
             type="text" 
             placeholder="Search products, categories..." 
             className="search-input"
+            aria-label="Search products and categories"
           />
-          <button className="search-button">Search</button>
+          <button className="search-button" aria-label="Search">Search</button>
         </div>
         <div className="header-actions">
-          <button className="header-button">My Account</button>
-          <button className="header-button">Cart</button>
+          <button className="header-button" aria-label="My Account">My Account</button>
+          <button className="header-button" aria-label="Shopping Cart">Cart</button>
         </div>
       </div>
       <nav className="navigation">

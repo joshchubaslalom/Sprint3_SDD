@@ -8,7 +8,7 @@ function MainContent() {
         <div className="hero-content">
           <h2>Welcome to Your Home Improvement Store</h2>
           <p>Find everything you need for your next project</p>
-          <button className="cta-button">Shop Now</button>
+          <button className="cta-button" onClick={() => console.log('Shop Now clicked')}>Shop Now</button>
         </div>
       </section>
 
@@ -57,25 +57,25 @@ function MainContent() {
             <div className="product-placeholder">Product Image</div>
             <h4>Product Name</h4>
             <p className="price">$99.99</p>
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={() => console.log('Added to cart: $99.99')}>Add to Cart</button>
           </div>
           <div className="product-card">
             <div className="product-placeholder">Product Image</div>
             <h4>Product Name</h4>
             <p className="price">$149.99</p>
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={() => console.log('Added to cart: $149.99')}>Add to Cart</button>
           </div>
           <div className="product-card">
             <div className="product-placeholder">Product Image</div>
             <h4>Product Name</h4>
             <p className="price">$79.99</p>
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={() => console.log('Added to cart: $79.99')}>Add to Cart</button>
           </div>
           <div className="product-card">
             <div className="product-placeholder">Product Image</div>
             <h4>Product Name</h4>
             <p className="price">$199.99</p>
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={() => console.log('Added to cart: $199.99')}>Add to Cart</button>
           </div>
         </div>
       </section>
