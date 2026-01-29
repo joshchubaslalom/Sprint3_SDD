@@ -26,13 +26,7 @@ git clone https://github.com/joshchubaslalom/Sprint3_SDD.git
 cd Sprint3_SDD
 ```
 
-### 2. Navigate to the Application Directory
-
-```bash
-cd home-depot-app
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -40,7 +34,7 @@ npm install
 
 This will install all the required dependencies listed in `package.json`.
 
-### 4. Start the Development Server
+### 3. Start the Development Server
 
 ```bash
 npm run dev
@@ -52,7 +46,7 @@ The development server includes Hot Module Replacement (HMR), so changes you mak
 
 ## Available Scripts
 
-In the `home-depot-app` directory, you can run:
+You can run:
 
 ### `npm run dev`
 Starts the development server with hot reload.
@@ -70,15 +64,14 @@ Previews the production build locally. Run `npm run build` first.
 
 ```
 Sprint3_SDD/
-├── home-depot-app/          # Main application directory
-│   ├── src/                 # Source code
-│   │   ├── components/      # React components
-│   │   ├── assets/          # Static assets
-│   │   ├── App.jsx          # Main App component
-│   │   └── main.jsx         # Application entry point
-│   ├── public/              # Public static files
-│   ├── package.json         # Dependencies and scripts
-│   └── vite.config.js       # Vite configuration
+├── src/                     # Source code
+│   ├── components/          # React components
+│   ├── assets/              # Static assets
+│   ├── App.jsx              # Main App component
+│   └── main.jsx             # Application entry point
+├── public/                  # Public static files
+├── package.json             # Dependencies and scripts
+├── vite.config.js           # Vite configuration
 └── README.md                # This file
 ```
 
