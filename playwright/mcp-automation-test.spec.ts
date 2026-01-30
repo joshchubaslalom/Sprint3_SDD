@@ -42,8 +42,12 @@ test.describe('MCP Browser Automation Tests', () => {
     // Verify the input contains the search term
     await expect(searchInput).toHaveValue('hammer');
     
-    // Click the search button
-    await page.getByRole('button', { name: 'Search' }).click();
+    // Click the search button (in this demo app, search doesn't navigate away)
+    const searchButton = page.getByRole('button', { name: 'Search' });
+    await searchButton.click();
+    
+    // Verify the search input still contains the search term after clicking
+    await expect(searchInput).toHaveValue('hammer');
   });
 
   test('navigation menu is accessible', async ({ page }) => {
@@ -66,7 +70,7 @@ test.describe('MCP Browser Automation Tests', () => {
     await expect(addToCartButtons.first()).toBeVisible();
   });
 
-  test('shop by department section', async ({ page }) => {
+  test('shop by department section is displayed', async ({ page }) => {
     // Verify shop by department section
     await expect(page.getByRole('heading', { name: 'Shop by Department' })).toBeVisible();
     

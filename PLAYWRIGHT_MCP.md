@@ -128,7 +128,7 @@ MCP tools are invoked by AI agents or MCP clients. They provide the same browser
 - **`playwright/example.spec.ts`**: Sample Playwright tests from the official documentation
 - **`playwright/playwright-sanity.spec.ts`**: Basic sanity check test
 - **`playwright/mcp-automation-test.spec.ts`**: Comprehensive tests for the Home Store app that demonstrate MCP-compatible automation patterns
-- **`seed.spec.ts`**: Template for generating new tests
+- **`seed.spec.ts`**: Template for generating new tests (located in project root)
 
 ## Screenshots Captured
 
