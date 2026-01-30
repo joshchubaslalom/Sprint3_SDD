@@ -60,6 +60,9 @@ Runs ESLint to check code quality and identify issues.
 ### `npm run preview`
 Previews the production build locally. Run `npm run build` first.
 
+### `npm test`
+Runs Playwright tests. Start the dev server first with `npm run dev`.
+
 ## Project Structure
 
 ```
@@ -80,6 +83,17 @@ Sprint3_SDD/
 - **React** 19.2.0 - UI library
 - **Vite** 7.2.4 - Build tool and development server
 - **ESLint** - Code linting and quality checks
+- **Playwright** - End-to-end testing framework
+- **Playwright MCP** - Browser automation via Model Context Protocol
+
+## Testing
+
+This project includes Playwright tests that can be run in two ways:
+
+1. **Standard Playwright Tests**: Run `npm test` to execute all tests
+2. **MCP Tools**: Use playwright-test MCP tools for browser automation
+
+See [PLAYWRIGHT_MCP.md](./PLAYWRIGHT_MCP.md) for detailed information about using Playwright with MCP tools.
 
 ## Troubleshooting
 
