@@ -1,6 +1,10 @@
 # Sprint3_SDD
 
-A React application built with Vite for Home Depot.
+A React application built with Vite for Home Depot. This repository uses [GitHub Spec Kit](https://github.com/github/spec-kit) for Specification-Driven Development (SDD).
+
+## What is Spec-Driven Development?
+
+Spec-Driven Development flips the traditional software development approach. Instead of writing code first and documentation second, SDD treats specifications as executable documents that directly guide AI agents to generate working implementations.
 
 ## Prerequisites
 
@@ -60,10 +64,44 @@ Runs ESLint to check code quality and identify issues.
 ### `npm run preview`
 Previews the production build locally. Run `npm run build` first.
 
+## Getting Started with Spec Kit
+
+This repository has been initialized with GitHub Spec Kit, which provides several commands to help you build features systematically:
+
+### Available Commands
+
+In GitHub Copilot Chat, you can use the following slash commands:
+
+- `/speckit.constitution` - Define or update project principles (e.g., coding conventions, architecture rules)
+- `/speckit.specify` - Create a feature specification from a natural language description
+- `/speckit.clarify` - Resolve ambiguities in the specification
+- `/speckit.plan` - Generate a technical plan and implementation breakdown
+- `/speckit.tasks` - Create actionable implementation tasks from the plan
+- `/speckit.implement` - Begin generating code from the tasks
+- `/speckit.analyze` - Analyze the codebase or specific features
+- `/speckit.checklist` - Create or update implementation checklists
+- `/speckit.taskstoissues` - Convert tasks to GitHub issues
+
+### Workflow
+
+1. **Define Principles**: Start by defining your project's core principles using `/speckit.constitution`
+2. **Specify Feature**: Describe what you want to build with `/speckit.specify`
+3. **Clarify Requirements**: Use `/speckit.clarify` to resolve any ambiguities
+4. **Create Plan**: Generate a technical plan with `/speckit.plan`
+5. **Break Down Tasks**: Create actionable tasks using `/speckit.tasks`
+6. **Implement**: Generate code with `/speckit.implement`
+
 ## Project Structure
 
 ```
 Sprint3_SDD/
+├── .github/
+│   ├── agents/              # Spec Kit agent definitions for GitHub Copilot
+│   └── prompts/             # Prompt templates for spec-driven commands
+├── .specify/
+│   ├── memory/              # Project constitution and memory
+│   ├── templates/           # Templates for specs, plans, tasks, and checklists
+│   └── scripts/             # Helper scripts for automation
 ├── src/                     # Source code
 │   ├── components/          # React components
 │   ├── assets/              # Static assets
@@ -72,6 +110,7 @@ Sprint3_SDD/
 ├── public/                  # Public static files
 ├── package.json             # Dependencies and scripts
 ├── vite.config.js           # Vite configuration
+├── .vscode/settings.json    # VS Code settings for Spec Kit integration
 └── README.md                # This file
 ```
 
@@ -98,6 +137,12 @@ Ensure you're using Node.js version 18 or higher. You can use [nvm](https://gith
 
 ## Additional Resources
 
+### React & Vite
 - [React Documentation](https://react.dev/)
 - [Vite Documentation](https://vitejs.dev/)
 - [ESLint Documentation](https://eslint.org/)
+
+### Spec Kit
+- [Spec Kit GitHub Repository](https://github.com/github/spec-kit)
+- [Spec Kit Documentation](https://github.github.com/spec-kit/)
+- [Quickstart Guide](https://github.com/github/spec-kit/blob/main/docs/quickstart.md)
